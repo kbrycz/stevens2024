@@ -121,7 +121,7 @@ function NewsPage() {
       </section>
 
       {/* ===== Cards Grid ===== */}
-      <section className="w-full pt-12 pb-20 md:pt-16 md:pb-28 lg:pt-20 lg:pb-32 px-6 md:px-12 lg:px-16" style={{ backgroundColor: colors.accent[200] }}>
+      <section className="w-full pt-12 pb-20 md:pt-16 md:pb-28 lg:pt-20 lg:pb-32 px-6 md:px-12 lg:px-16" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {articles.map((article, index) => (

@@ -15,11 +15,11 @@ function AboutPage() {
     <div className="min-h-screen">
       {/* ===== SECTION 1: Intro (White) ===== */}
       <section
-        className="w-full pt-12 pb-20 md:pt-16 md:pb-28 lg:pt-20 lg:pb-32"
+        className="w-full pt-20 pb-28 md:pt-28 md:pb-36 lg:pt-32 lg:pb-44"
         style={{ backgroundColor: '#ffffff' }}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
             {/* Text Content */}
             <div className="order-last lg:order-first text-center lg:text-left">
               <AnimateIn delay={0.1}>
@@ -53,12 +53,12 @@ function AboutPage() {
             <AnimateIn delay={0.2} className="w-full flex justify-center order-first lg:order-last">
               <div
                 className="rounded-lg overflow-hidden shadow-2xl"
-                style={{ border: `3px solid ${colors.primary[500]}20` }}
+                style={{ border: `3px solid ${colors.gold[300]}40` }}
               >
                 <img
                   src={aboutIntroImage}
                   alt="Kyle Stevens speaking to supporters"
-                  className="w-full max-w-xl h-auto block"
+                  className="w-full max-w-2xl h-auto block"
                 />
               </div>
             </AnimateIn>
@@ -66,23 +66,23 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* ===== SECTION 2: His Story (Cream) ===== */}
+      {/* ===== SECTION 2: His Story (Dark) ===== */}
       <section
         className="w-full py-20 md:py-28 lg:py-32"
-        style={{ backgroundColor: colors.accent[200] }}
+        style={{ backgroundColor: colors.accent[900] }}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="text-center mb-12 lg:mb-16">
             <AnimateIn delay={0.1}>
               <p
                 className="text-sm font-bold uppercase tracking-widest mb-4"
-                style={{ color: colors.primary[500] }}
+                style={{ color: colors.primary[400] }}
               >
                 {about.bioLabel}
               </p>
             </AnimateIn>
             <AnimateIn delay={0.15}>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
                 {about.bioHeading}
               </h2>
             </AnimateIn>
@@ -93,7 +93,7 @@ function AboutPage() {
             <AnimateIn delay={0.2}>
               <div
                 className="w-full overflow-hidden rounded-lg shadow-2xl"
-                style={{ border: `3px solid ${colors.primary[500]}20` }}
+                style={{ border: `3px solid ${colors.gold[300]}40` }}
               >
                 <img
                   src={aboutImage}
@@ -107,7 +107,7 @@ function AboutPage() {
             <div>
               {about.bio.map((paragraph, index) => (
                 <AnimateIn key={index} delay={0.3 + index * 0.1}>
-                  <p className="text-neutral-600 text-lg leading-relaxed mb-6">
+                  <p className="text-neutral-300 text-lg leading-relaxed mb-6">
                     {paragraph}
                   </p>
                 </AnimateIn>
@@ -189,7 +189,7 @@ function AboutPage() {
             <AnimateIn delay={0.2} className="order-first lg:order-last flex">
               <div
                 className="w-full overflow-hidden rounded-lg shadow-xl flex"
-                style={{ border: `3px solid ${colors.primary[500]}20` }}
+                style={{ border: `3px solid ${colors.gold[300]}40` }}
               >
                 <img
                   src={squareImage}
@@ -202,10 +202,10 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* ===== SECTION 4: Call to Action (Cream) ===== */}
+      {/* ===== SECTION 4: Call to Action (Dark) ===== */}
       <section
         className="w-full py-20 md:py-28 lg:py-32"
-        style={{ backgroundColor: colors.accent[200] }}
+        style={{ backgroundColor: colors.accent[900] }}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -213,7 +213,7 @@ function AboutPage() {
             <AnimateIn delay={0.2}>
               <div
                 className="w-full overflow-hidden rounded-lg shadow-2xl"
-                style={{ border: `3px solid ${colors.primary[500]}20` }}
+                style={{ border: `3px solid ${colors.gold[300]}40` }}
               >
                 <img
                   src={candidatePortrait}
@@ -228,18 +228,18 @@ function AboutPage() {
               <AnimateIn delay={0.1}>
                 <p
                   className="text-sm font-bold uppercase tracking-widest mb-4"
-                  style={{ color: colors.primary[500] }}
+                  style={{ color: colors.primary[400] }}
                 >
                   {about.ctaLabel}
                 </p>
               </AnimateIn>
               <AnimateIn delay={0.15}>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 mb-6">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
                   {about.ctaHeading}
                 </h2>
               </AnimateIn>
               <AnimateIn delay={0.2}>
-                <p className="text-neutral-600 text-lg leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0 text-left">
+                <p className="text-neutral-300 text-lg leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0 text-left">
                   {about.ctaText}
                 </p>
               </AnimateIn>

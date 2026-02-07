@@ -39,7 +39,7 @@ function AboutSection() {
             <AnimateIn delay={0.6}>
               <Link
                 to="/about"
-                className="inline-block font-semibold px-8 py-3 rounded-md text-white transition-colors duration-200 hover:opacity-90"
+                className="block w-full md:inline-block md:w-auto text-center font-semibold px-8 py-3 rounded-md text-white transition-colors duration-200 hover:opacity-90"
                 style={{ backgroundColor: colors.primary[500] }}
               >
                 Learn More

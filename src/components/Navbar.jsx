@@ -42,7 +42,7 @@ function Navbar({ variant = 'solid' }) {
       >
         <AnimateIn delay={0}>
           <Link to="/" className="block">
-            <img src={logoImage} alt="Campaign Logo" className="h-20 sm:h-24 md:h-28 w-auto" />
+            <img src={logoImage} alt="Campaign Logo" className="h-[7.5rem] sm:h-36 md:h-[10.5rem] w-auto" />
           </Link>
         </AnimateIn>
 
@@ -77,12 +77,12 @@ function Navbar({ variant = 'solid' }) {
       {mobileMenuOpen && (
         <div
           className="lg:hidden absolute left-0 right-0 top-0 z-50 pb-8"
-          style={{ backgroundColor: '#ffffff' }}
+          style={{ backgroundColor: colors.accent[900] }}
         >
           {/* Duplicate header row so it sits on top seamlessly */}
           <div className="flex items-center justify-between px-4 sm:px-6 md:px-8 pt-4 sm:pt-5 pb-3">
             <Link to="/" className="block" onClick={() => setMobileMenuOpen(false)}>
-              <img src={logoImage} alt="Campaign Logo" className="h-20 sm:h-24 md:h-28 w-auto" />
+              <img src={logoImage} alt="Campaign Logo" className="h-[7.5rem] sm:h-36 md:h-[10.5rem] w-auto" />
             </Link>
             <div className="flex items-center gap-3">
               <a
@@ -93,7 +93,7 @@ function Navbar({ variant = 'solid' }) {
               </a>
               <button
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-neutral-800 p-1.5"
+                className="text-white p-1.5"
                 aria-label="Close menu"
               >
                 <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@ function Navbar({ variant = 'solid' }) {
               <div key={link.label}>
                 {renderLink(
                   link,
-                  'text-neutral-800 text-lg font-bold tracking-[0.2em] uppercase py-4 border-b border-accent-400 hover:text-primary-500 transition-colors block',
+                  'text-neutral-200 text-lg font-bold tracking-[0.2em] uppercase py-4 border-b border-neutral-700 hover:text-primary-400 transition-colors block',
                   () => setMobileMenuOpen(false)
                 )}
               </div>
@@ -120,14 +120,14 @@ function Navbar({ variant = 'solid' }) {
 
       {/* ===== DESKTOP NAVBAR ===== */}
       <nav className="hidden lg:block relative z-20 w-full" style={bgStyle}>
-        <div className="flex items-center justify-between px-16 xl:px-20 py-5">
-          {/* Logo */}
-          <AnimateIn delay={0}>
-            <Link to="/" className="block">
-              <img src={logoImage} alt="Campaign Logo" className="h-20 xl:h-24 w-auto" />
-            </Link>
-          </AnimateIn>
+        {/* Logo - absolutely positioned, matching hero nav placement */}
+        <AnimateIn delay={0} className="absolute left-16 xl:left-20 -top-2 z-30">
+          <Link to="/" className="block">
+            <img src={logoImage} alt="Campaign Logo" className="h-[7.5rem] xl:h-36 w-auto" />
+          </Link>
+        </AnimateIn>
 
+        <div className="flex items-center justify-end px-16 xl:px-20 pt-12 pb-5">
           {/* Desktop Nav Links */}
           <div className="flex items-center gap-5 xl:gap-7">
             {navLinks.map((link, i) => (

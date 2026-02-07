@@ -80,7 +80,7 @@ function ContactPage() {
       </section>
 
       {/* ===== SECTION 2: Contact Form ===== */}
-      <section className="w-full pb-20 md:pb-28 lg:pb-32 pt-6 md:pt-8 lg:pt-10" style={{ backgroundColor: colors.accent[200] }}>
+      <section className="w-full pb-20 md:pb-28 lg:pb-32 pt-6 md:pt-8 lg:pt-10" style={{ backgroundColor: '#ffffff' }}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="max-w-2xl mx-auto">
             {submitted ? (

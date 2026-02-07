@@ -11,6 +11,7 @@ export default {
       colors: {
         primary: colors.primary,
         accent: colors.accent,
+        gold: colors.gold,
         neutral: colors.neutral,
         success: colors.success,
         warning: colors.warning,

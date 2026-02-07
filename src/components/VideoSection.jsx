@@ -7,7 +7,7 @@ function VideoSection() {
   return (
     <section
       className="w-full py-16 md:py-24 lg:py-32 px-6 md:px-12 lg:px-16"
-      style={{ backgroundColor: colors.accent[200] }}
+      style={{ backgroundColor: colors.accent[900] }}
     >
       <div className="max-w-4xl mx-auto">
         {/* Video Thumbnail */}
@@ -47,9 +47,9 @@ function VideoSection() {
 
         {/* Heading */}
         <AnimateIn delay={0.3}>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-neutral-900 leading-tight tracking-tight mb-6 md:mb-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-white leading-tight tracking-tight mb-6 md:mb-8">
             {siteData.video.headline}{' '}
-            <span style={{ color: colors.primary[500] }}>
+            <span style={{ color: colors.primary[400] }}>
               {siteData.video.highlightText}
             </span>
           </h2>
@@ -57,7 +57,7 @@ function VideoSection() {
 
         {/* Sub-text */}
         <AnimateIn delay={0.4}>
-          <p className="text-center text-neutral-600 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-10 md:mb-12">
+          <p className="text-center text-neutral-300 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-10 md:mb-12">
             {siteData.video.description}
           </p>
         </AnimateIn>

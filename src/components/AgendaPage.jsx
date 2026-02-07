@@ -15,21 +15,21 @@ function AgendaPage() {
 
       {/* ===== SECTION 1: Intro — Image Left, Text Right ===== */}
       <section
-        className="w-full pt-12 pb-20 md:pt-16 md:pb-28 lg:pt-20 lg:pb-32"
+        className="w-full pt-20 pb-28 md:pt-28 md:pb-36 lg:pt-32 lg:pb-44"
         style={{ backgroundColor: '#ffffff' }}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
             {/* Image */}
             <AnimateIn delay={0.2} className="w-full flex justify-center">
               <div
                 className="rounded-lg overflow-hidden shadow-2xl"
-                style={{ border: `3px solid ${colors.primary[500]}20` }}
+                style={{ border: `3px solid ${colors.gold[300]}40` }}
               >
                 <img
                   src={candidatePortrait}
                   alt={`${siteData.candidate.fullName} presenting his agenda`}
-                  className="w-full max-w-xl h-auto block"
+                  className="w-full max-w-2xl h-auto block"
                 />
               </div>
             </AnimateIn>
@@ -69,25 +69,25 @@ function AgendaPage() {
       {/* ===== SECTION 2: Agenda Items — Full-Width Numbered Rows ===== */}
       <section
         className="w-full py-20 md:py-28 lg:py-32"
-        style={{ backgroundColor: colors.accent[200] }}
+        style={{ backgroundColor: colors.accent[900] }}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
           <div className="text-center mb-16 lg:mb-20">
             <AnimateIn delay={0.1}>
               <p
                 className="text-sm font-bold uppercase tracking-widest mb-4"
-                style={{ color: colors.primary[500] }}
+                style={{ color: colors.primary[400] }}
               >
                 {agenda.prioritiesLabel}
               </p>
             </AnimateIn>
             <AnimateIn delay={0.15}>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
                 {agenda.prioritiesHeading}
               </h2>
             </AnimateIn>
             <AnimateIn delay={0.2}>
-              <p className="text-neutral-500 text-lg max-w-2xl mx-auto">
+              <p className="text-neutral-400 text-lg max-w-2xl mx-auto">
                 {agenda.prioritiesSubheading}
               </p>
             </AnimateIn>
@@ -97,19 +97,25 @@ function AgendaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {agenda.priorities.map((item, index) => (
               <AnimateIn key={index} delay={0.25 + index * 0.08}>
-                <div className="group bg-white rounded-xl p-7 lg:p-8 h-full border border-neutral-200 hover:border-primary-300 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+                <div
+                  className="group rounded-xl p-7 lg:p-8 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
+                  style={{
+                    backgroundColor: colors.accent[800],
+                    border: `1px solid ${colors.accent[700]}`,
+                  }}
+                >
                   <div className="flex items-start gap-5">
                     {/* Number badge */}
                     <div
                       className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                       style={{
-                        backgroundColor: `${colors.primary[500]}12`,
-                        border: `2px solid ${colors.primary[500]}35`,
+                        backgroundColor: `${colors.primary[500]}20`,
+                        border: `2px solid ${colors.primary[500]}60`,
                       }}
                     >
                       <span
                         className="text-xl font-black tracking-tight"
-                        style={{ color: colors.primary[500] }}
+                        style={{ color: colors.primary[400] }}
                       >
                         {item.number}
                       </span>
@@ -117,10 +123,10 @@ function AgendaPage() {
 
                     {/* Content */}
                     <div className="flex-1">
-                      <h3 className="text-xl font-bold text-neutral-900 mb-2">
+                      <h3 className="text-xl font-bold text-white mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-neutral-500 leading-relaxed text-base">
+                      <p className="leading-relaxed text-base" style={{ color: colors.accent[300] }}>
                         {item.description}
                       </p>
                     </div>

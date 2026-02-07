@@ -91,7 +91,7 @@ function HeroSection() {
         {mobileMenuOpen && (
           <div
             className="absolute left-0 right-0 top-0 z-30 pb-8"
-            style={{ backgroundColor: colors.accent[200] }}
+            style={{ backgroundColor: colors.accent[900] }}
           >
             <div className="flex items-center justify-between px-4 sm:px-6 md:px-8 pt-4 sm:pt-5 pb-3">
               <a href="#" className="block">
@@ -106,7 +106,7 @@ function HeroSection() {
                 </a>
                 <button
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-neutral-800 p-1.5"
+                  className="text-white p-1.5"
                   aria-label="Close menu"
                 >
                   <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,7 +123,7 @@ function HeroSection() {
                     key={link.label}
                     to={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="text-neutral-800 text-lg font-bold tracking-[0.2em] uppercase py-4 border-b border-neutral-300 hover:text-primary-500 transition-colors"
+                    className="text-neutral-200 text-lg font-bold tracking-[0.2em] uppercase py-4 border-b border-neutral-700 hover:text-primary-400 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -132,7 +132,7 @@ function HeroSection() {
                     key={link.label}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="text-neutral-800 text-lg font-bold tracking-[0.2em] uppercase py-4 border-b border-neutral-300 hover:text-primary-500 transition-colors"
+                    className="text-neutral-200 text-lg font-bold tracking-[0.2em] uppercase py-4 border-b border-neutral-700 hover:text-primary-400 transition-colors"
                   >
                     {link.label}
                   </a>
@@ -148,26 +148,26 @@ function HeroSection() {
         {/* Hero Content - stacked on mobile */}
         <div className="relative z-10 px-5 sm:px-8 md:px-10 pb-8 sm:pb-10 md:pb-12 mt-auto">
           <div className="w-full max-w-md sm:max-w-lg md:max-w-xl mx-auto">
-            {/* Label */}
+            {/* Label - hidden on mobile, visible on tablet */}
             <AnimateIn delay={0.1}>
-              <p className="text-primary-400 font-bold text-xs sm:text-sm tracking-[0.3em] uppercase mb-3 text-center">
+              <p className="hidden sm:block text-primary-400 font-bold text-xs sm:text-sm tracking-[0.3em] uppercase mb-3 text-center">
                 {siteData.candidate.fullName} for Mayor
               </p>
             </AnimateIn>
 
             {/* Headline */}
-            <div className="mb-3 text-center">
+            <div className="-mt-3 sm:mt-0 mb-3 text-center">
               <TextAnimate
                 as="h1"
                 animation="fadeIn"
                 by="word"
                 delay={0.2}
                 once
-                className="text-4xl sm:text-5xl md:text-5xl font-bold text-white leading-[1.08] tracking-tight inline"
+                className="text-5xl sm:text-5xl md:text-5xl font-bold text-white leading-[1.08] tracking-tight inline"
               >
                 {headlineText}
               </TextAnimate>
-              <span className="text-4xl sm:text-5xl md:text-5xl font-bold text-primary-400">.</span>
+              <span className="text-5xl sm:text-5xl md:text-5xl font-bold text-primary-400">.</span>
             </div>
 
             {/* Subheadline */}

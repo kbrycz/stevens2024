@@ -80,6 +80,7 @@ const siteData = {
     intro: [
       'Kyle Stevens is running for Mayor because he believes city government should work for the people \u2014 not the other way around. Built on faith, family, and freedom, he\u2019s committed to defending the values that keep our neighborhoods strong.',
       'From a working-class household to a career in public service, Kyle has always stood for accountable government, personal responsibility, and the opportunity for every resident to succeed.',
+      'As a city council member, Kyle led the effort to cut wasteful spending by over $2 million, fought to keep property taxes low, and championed transparency in every corner of local government. He knows what it takes to get results.',
     ],
     bioLabel: 'From Our Community',
     bioHeading: 'His Story',
@@ -116,6 +117,7 @@ const siteData = {
     intro: [
       'Kyle Stevens is running on a bold agenda built around the principles that make our city great: accountable government, community investment, and fiscal responsibility. He believes City Hall has forgotten who it works for \u2014 and he intends to remind them.',
       'From improving public safety to cutting taxes and investing in infrastructure, Kyle has a concrete plan to fight for the hardworking families in our city.',
+      'Every initiative in this agenda was shaped by conversations with real residents \u2014 small business owners, parents, first responders, and community leaders who know exactly what our city needs to thrive.',
     ],
     prioritiesLabel: 'Key Priorities',
     prioritiesHeading: 'The Agenda for Action',

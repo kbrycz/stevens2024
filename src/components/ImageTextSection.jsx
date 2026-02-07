@@ -6,7 +6,7 @@ import { colors } from '@/config/colors'
 
 function ImageTextSection() {
   return (
-    <section className="w-full py-16 md:py-24 px-6 md:px-12 lg:px-16" style={{ backgroundColor: colors.accent[100] }}>
+    <section className="w-full py-16 md:py-24 px-6 md:px-12 lg:px-16" style={{ backgroundColor: colors.accent[950] }}>
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16">
           <AnimateIn delay={0} className="w-full md:w-1/2 flex justify-center">
@@ -14,14 +14,14 @@ function ImageTextSection() {
           </AnimateIn>
 
           <div className="w-full md:w-1/2">
-            <TextAnimate as="h2" animation="fadeIn" by="word" delay={0.2} once className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-10 leading-tight tracking-tight text-center md:text-left" style={{ color: colors.primary[500] }}>
+            <TextAnimate as="h2" animation="fadeIn" by="word" delay={0.2} once className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-10 leading-tight tracking-tight text-center md:text-left" style={{ color: colors.primary[400] }}>
               {siteData.imageText.headline}
             </TextAnimate>
             <div className="space-y-4">
-              <TextAnimate as="p" animation="fadeIn" by="word" delay={0.4} once className="text-lg md:text-xl font-semibold text-neutral-700 leading-relaxed">
+              <TextAnimate as="p" animation="fadeIn" by="word" delay={0.4} once className="text-lg md:text-xl font-semibold text-neutral-300 leading-relaxed">
                 {siteData.imageText.subheading}
               </TextAnimate>
-              <TextAnimate as="p" animation="fadeIn" by="word" delay={0.6} once className="text-base md:text-lg text-neutral-600 leading-relaxed">
+              <TextAnimate as="p" animation="fadeIn" by="word" delay={0.6} once className="text-base md:text-lg text-neutral-400 leading-relaxed">
                 {siteData.campaign.pacDescription}
               </TextAnimate>
             </div>

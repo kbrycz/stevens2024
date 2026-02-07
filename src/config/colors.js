@@ -7,34 +7,49 @@
  */
 
 export const colors = {
-  // Primary colors - bold red (#e74c3c)
+  // Primary colors - forest green (#628141)
   primary: {
-    50: '#fef2f2',
-    100: '#fee2e2',
-    200: '#fecaca',
-    300: '#fca5a5',
-    400: '#f87171',
-    500: '#e74c3c', // Your specified primary color
-    600: '#dc2626',
-    700: '#b91c1c',
-    800: '#991b1b',
-    900: '#7f1d1d',
-    950: '#450a0a',
+    50: '#f4f7f0',
+    100: '#e6edde',
+    200: '#cddcbe',
+    300: '#adc494',
+    400: '#8BAE66', // lighter green
+    500: '#628141', // main green
+    600: '#4d6834',
+    700: '#3d512a',
+    800: '#334225',
+    900: '#2c3821',
+    950: '#151d0f',
   },
   
-  // Accent colors - warm cream (#F4ECDF)
+  // Accent colors - dark green (#1B211A)
   accent: {
-    50: '#FDFBF7',
-    100: '#FAF6EF',
-    200: '#F4ECDF', // Your specified accent color
-    300: '#EDE0CC',
-    400: '#E0CDAB',
-    500: '#D4BA8E',
-    600: '#BFA06E',
-    700: '#A08455',
-    800: '#7D6743',
-    900: '#5E4E33',
-    950: '#3D3221',
+    50: '#f3f4f2',
+    100: '#e3e6e2',
+    200: '#c7cdc5',
+    300: '#a2ac9f',
+    400: '#7d8978',
+    500: '#5e6a5c',
+    600: '#4a5449',
+    700: '#3c443b',
+    800: '#2e352d',
+    900: '#1B211A', // dark green base
+    950: '#0f1310',
+  },
+  
+  // Gold/warm accent (#EBD5AB)
+  gold: {
+    50: '#fdfaf3',
+    100: '#faf3e2',
+    200: '#f5e6c5',
+    300: '#EBD5AB', // warm gold
+    400: '#dfc08a',
+    500: '#d1a966',
+    600: '#bc8f4a',
+    700: '#9d733b',
+    800: '#805d34',
+    900: '#694d2e',
+    950: '#3a2817',
   },
   
   // Neutral colors

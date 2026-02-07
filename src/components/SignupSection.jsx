@@ -25,12 +25,12 @@ function SignupSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[500px]">
         <div
           className="flex flex-col justify-center px-8 md:px-16 lg:px-20 py-16 md:py-20"
-          style={{ backgroundColor: colors.accent[300] }}
+          style={{ backgroundColor: colors.accent[800] }}
         >
           <div className="max-w-md mx-auto w-full lg:ml-auto lg:mr-16">
             <AnimateIn delay={0.2}>
               <h2
-                className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10 leading-tight tracking-tight text-neutral-900"
+                className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10 leading-tight tracking-tight text-white"
               >
                 Sign Up To Receive Updates
               </h2>

@@ -36,7 +36,13 @@ function Layout({ children }) {
 
   return (
     <>
-      {!isHome && <Navbar variant="solid" />}
+      {!isHome && (
+        <>
+          <Navbar variant="solid" />
+          {/* Spacer to clear the oversized logo that overflows the navbar */}
+          <div className="hidden lg:block h-16" />
+        </>
+      )}
       {children}
     </>
   )
