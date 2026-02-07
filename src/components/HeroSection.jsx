@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import heroImage from '../assets/hero-bg.png'
 import logoImage from '../assets/logo-white.png'
-import logoColor from '../assets/logo-color.png'
 import { TextAnimate } from '@/components/ui/text-animate'
 import AnimateIn from './ui/AnimateIn'
 import siteData from '../config/siteData'
@@ -95,7 +94,7 @@ function HeroSection() {
           >
             <div className="flex items-center justify-between px-4 sm:px-6 md:px-8 pt-4 sm:pt-5 pb-3">
               <a href="#" className="block">
-                <img src={logoColor} alt="Campaign Logo" className="h-28 sm:h-32 md:h-40 w-auto" />
+                <img src={logoImage} alt="Campaign Logo" className="h-28 sm:h-32 md:h-40 w-auto" />
               </a>
               <div className="flex items-center gap-3">
                 <a
